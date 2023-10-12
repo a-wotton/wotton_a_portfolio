@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 424.44 85.18">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.1em;
+      }
+
+      .cls-1, .cls-2 {
+        font-size: 78px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        font-family: Outfit-ExtraBold, Outfit;
+        font-variation-settings: 'wght' 800;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        font-size: 64px;
+        letter-spacing: -.03em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.03em;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(3.41 65.36)"><tspan class="cls-2" x="0" y="0">A</tspan><tspan class="cls-4" x="55.92" y="0">iden </tspan><tspan class="cls-1" x="188.66" y="0">W</tspan><tspan class="cls-4" x="259.87" y="0">otton</tspan></text>
+</svg>
