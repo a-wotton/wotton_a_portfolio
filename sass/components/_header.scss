@@ -1,0 +1,57 @@
+#banner {
+    height: 57px;
+    background-color: #52B788;
+}
+
+header {
+    height: 57px;
+    align-items: center;
+}
+
+#logo {
+    height: 40px;
+}
+
+#hamburger-menu {
+    height: 38px;
+    width: 52px;
+    justify-self: end;
+}
+
+#hamburger-menu:hover {
+    height: 38px;
+    width: 52px;
+    justify-self: end;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    height: 40px;
+}
+
+#mobile-menu {
+    background-color: #1b4332;
+    height: 300px;
+    width: 150px;
+    position: absolute;
+    right: 0px;
+    top: 57px;
+    z-index: 10;
+    border-radius: 0;
+    opacity: 90%;
+}
+
+@media screen and (min-width: 600px) {
+    #hamburger-menu {
+        display: none;
+    }
+
+    nav {
+        display: inline;
+    }
+
+    #mobile-menu {
+        display: none;
+    }
+}

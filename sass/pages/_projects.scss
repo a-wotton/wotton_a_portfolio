@@ -1,0 +1,133 @@
+#gallery-intro {
+    height: 100px;
+    margin-top: 15px;
+}
+
+.project {
+    height: 330px;
+    margin-top: 45px;
+}
+
+.project:hover {
+    cursor: pointer;
+}
+
+.project:hover .project-title{
+    opacity: 100%;
+}
+
+.project-title {
+    height: 30%;
+    width: 100%;
+    background-color: #52b788;
+    opacity: 0;
+    //replace with a detailed gsap animation
+    transition: all 0.5s ease-in;
+}
+
+#project-name {
+    margin-top: 30px;
+    height: 58px;
+    border-radius: 30px;
+}
+
+#project-image {
+    margin-top: 20px;
+    height: 270px;
+}
+
+#project-desc {
+    margin-top: 15px;
+    height: 140px;
+}
+
+#additional-desc {
+    margin-top: 15px;
+    height: 180px;
+}
+
+#case-study-button {
+    margin-top: 10px;
+    height: 50px;
+}
+
+#read-more {
+    margin-top: 10px;
+    height: 35px;
+    align-self: end;
+}
+
+#read-more:hover {
+    cursor: pointer;
+}
+
+#read-more p {
+    font-size: 14px;
+}
+
+@media screen and (min-width: 600px) {
+    .project {
+        height: 450px;
+    }
+    #project-name {
+        height: 80px;
+        margin-left: -28px;
+        border-radius: 0;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+
+    #project-image {
+        height: 350px;
+    }
+
+    #project-desc {
+        margin-top: 20px;
+        height: 250px;
+    }
+
+    #additional-desc {
+        margin-top: 20px;
+        height: 300px;
+    }
+
+    #case-study-button {
+        margin-top: 15px;
+        height: 70px;
+    }
+
+    #read-more {
+        margin-top: 15px;
+        height: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    #project-name {
+        height: 150px;
+        border-top-right-radius: 80px;
+        border-bottom-right-radius: 80px;
+        margin-left: -52px;
+    }
+
+    #project-image {
+        height: 550px;
+    }
+
+    #project-desc {
+        height: 300px;
+    }
+
+    #additional-desc {
+        height: 380px;
+    }
+
+    #case-study-button {
+        height: 80px;
+    }
+
+    #read-more {
+        height: 60px;
+    }
+}

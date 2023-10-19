@@ -1,3 +1,539 @@
+#banner2 {
+  margin-top: 15px;
+  height: 150px;
+  background-color: #52b788;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
 
+#address {
+  margin-top: 35px;
+  height: 35px;
+}
+
+#media-icons {
+  margin-top: 20px;
+  height: 50px;
+}
+
+#resume {
+  height: 35px;
+  align-self: end;
+}
+
+@media screen and (min-width: 600px) {
+  #banner2 {
+    height: 185px;
+    margin-top: 20px;
+  }
+  #address {
+    height: 45px;
+  }
+  #media-icons {
+    height: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #banner2 {
+    height: 260px;
+  }
+  #address {
+    height: 80px;
+  }
+  #media-icons {
+    height: 90px;
+    margin-top: 30px;
+  }
+  #resume {
+    height: 50px;
+  }
+}
+#banner {
+  height: 57px;
+  background-color: #52B788;
+}
+
+header {
+  height: 57px;
+  align-items: center;
+}
+
+#logo {
+  height: 40px;
+}
+
+#hamburger-menu {
+  height: 38px;
+  width: 52px;
+  justify-self: end;
+}
+
+#hamburger-menu:hover {
+  height: 38px;
+  width: 52px;
+  justify-self: end;
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+  height: 40px;
+}
+
+#mobile-menu {
+  background-color: #1b4332;
+  height: 300px;
+  width: 150px;
+  position: absolute;
+  right: 0px;
+  top: 57px;
+  z-index: 10;
+  border-radius: 0;
+  opacity: 90%;
+}
+
+@media screen and (min-width: 600px) {
+  #hamburger-menu {
+    display: none;
+  }
+  nav {
+    display: inline;
+  }
+  #mobile-menu {
+    display: none;
+  }
+}
+body {
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+}
+
+#hero {
+  margin-top: 15px;
+}
+
+#intro {
+  height: 148px;
+}
+
+#container {
+  position: relative;
+}
+
+#photo {
+  height: 200px;
+}
+
+#margin {
+  height: 40px;
+  width: 100%;
+  background-color: rgba(82, 183, 136, 0.5);
+  position: absolute;
+  bottom: 0px;
+}
+
+#bio {
+  margin-top: 15px;
+}
+
+#brief-desc {
+  height: 100px;
+}
+
+#learn-more {
+  height: 45px;
+  margin-top: 10px;
+}
+
+#demo-reel {
+  margin-top: 15px;
+}
+
+#demo-title {
+  height: 100px;
+}
+
+#video {
+  margin-top: 15px;
+  height: 280px;
+}
+
+#contact-title {
+  margin-top: 20px;
+  height: 40px;
+}
+
+.contact-box {
+  margin-top: 10px;
+  height: 50px;
+}
+
+#message {
+  height: 130px;
+}
+
+@media screen and (min-width: 600px) {
+  #intro {
+    height: 188px;
+  }
+  #photo {
+    height: 285px;
+  }
+  #margin {
+    height: 50px;
+  }
+  #brief-desc {
+    height: 125px;
+  }
+  #learn-more {
+    height: 60px;
+    margin-top: 15px;
+  }
+  #video {
+    height: 430px;
+    margin-top: 20px;
+  }
+  #contact-title {
+    height: 70px;
+  }
+  .contact-box {
+    height: 70px;
+    margin-top: 15px;
+  }
+  #message {
+    height: 200px;
+  }
+  #hero {
+    margin-top: 20px;
+  }
+  #bio {
+    margin-top: 20px;
+  }
+  #demo-reel {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #intro {
+    height: 300px;
+  }
+  #photo {
+    height: 475px;
+  }
+  #margin {
+    height: 80px;
+  }
+  #brief-desc {
+    height: 180px;
+  }
+  #learn-more {
+    height: 80px;
+  }
+  #demo-title {
+    height: 150px;
+  }
+  #video {
+    height: 1000;
+  }
+  #contact-title {
+    height: 90px;
+  }
+  .contact-box {
+    height: 100px;
+  }
+  #message {
+    height: 350px;
+  }
+}
+#about {
+  margin-top: 100px;
+  margin-bottom: 400px;
+}
+
+#about-banner {
+  position: fixed;
+  top: 0;
+  height: 57px;
+  background-color: #52b788;
+  width: 100%;
+  z-index: 10;
+}
+
+#profile {
+  height: 175px;
+  width: 175px;
+  justify-self: center;
+  border-radius: 50%;
+}
+
+#desc1 {
+  margin-top: 15px;
+  height: 80px;
+}
+
+#desc2 {
+  height: 300px;
+}
+
+#section2 {
+  margin-bottom: 200px;
+}
+
+#conclusion {
+  height: 130px;
+}
+
+#conclusion-con {
+  margin-bottom: 100px;
+}
+
+@media screen and (min-width: 600px) {
+  #profile {
+    height: 260px;
+    width: 260px;
+  }
+  #desc1 {
+    margin-top: 20px;
+  }
+  #conclusion {
+    height: 190px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #profile {
+    height: 400px;
+    width: 400px;
+  }
+  #desc1 {
+    height: 110px;
+    align-self: end;
+  }
+  #desc2 {
+    height: 500px;
+    margin-top: 40px;
+  }
+  #conclusion {
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+#gallery-intro {
+  height: 100px;
+  margin-top: 15px;
+}
+
+.project {
+  height: 330px;
+  margin-top: 45px;
+}
+
+.project:hover {
+  cursor: pointer;
+}
+
+.project:hover .project-title {
+  opacity: 100%;
+}
+
+.project-title {
+  height: 30%;
+  width: 100%;
+  background-color: #52b788;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+
+#project-name {
+  margin-top: 30px;
+  height: 58px;
+  border-radius: 30px;
+}
+
+#project-image {
+  margin-top: 20px;
+  height: 270px;
+}
+
+#project-desc {
+  margin-top: 15px;
+  height: 140px;
+}
+
+#additional-desc {
+  margin-top: 15px;
+  height: 180px;
+}
+
+#case-study-button {
+  margin-top: 10px;
+  height: 50px;
+}
+
+#read-more {
+  margin-top: 10px;
+  height: 35px;
+  align-self: end;
+}
+
+#read-more:hover {
+  cursor: pointer;
+}
+
+#read-more p {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 600px) {
+  .project {
+    height: 450px;
+  }
+  #project-name {
+    height: 80px;
+    margin-left: -28px;
+    border-radius: 0;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  #project-image {
+    height: 350px;
+  }
+  #project-desc {
+    margin-top: 20px;
+    height: 250px;
+  }
+  #additional-desc {
+    margin-top: 20px;
+    height: 300px;
+  }
+  #case-study-button {
+    margin-top: 15px;
+    height: 70px;
+  }
+  #read-more {
+    margin-top: 15px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #project-name {
+    height: 150px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    margin-left: -52px;
+  }
+  #project-image {
+    height: 550px;
+  }
+  #project-desc {
+    height: 300px;
+  }
+  #additional-desc {
+    height: 380px;
+  }
+  #case-study-button {
+    height: 80px;
+  }
+  #read-more {
+    height: 60px;
+  }
+}
+.study {
+  margin-top: 20px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.study:hover {
+  cursor: pointer;
+}
+
+.study:hover .study-title {
+  opacity: 100%;
+}
+
+.study-title {
+  height: 20%;
+  width: 80%;
+  background-color: #52b788;
+  border-radius: 50px;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.thumbnail {
+  margin-top: 20px;
+  height: 220px;
+}
+
+#subpage-title {
+  margin-top: 20px;
+  height: 40px;
+}
+
+.subpage-intro {
+  margin-top: 15px;
+  height: 100px;
+}
+
+.step {
+  margin-top: 60px;
+}
+
+.step-title {
+  height: 40px;
+}
+
+.step-text {
+  margin-top: 15px;
+  height: 120px;
+}
+
+@media screen and (min-width: 600px) {
+  .study {
+    height: 500px;
+  }
+  .step {
+    margin-top: 100px;
+  }
+  #subpage-title {
+    height: 60px;
+  }
+  .thumbnail {
+    height: 350px;
+  }
+  .subpage-intro {
+    height: 140px;
+  }
+  .step-title {
+    height: 60px;
+  }
+  .step-text {
+    height: 180px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .study {
+    height: 400px;
+  }
+  .step {
+    margin-top: 150px;
+  }
+  #subpage-title {
+    height: 80px;
+  }
+  .thumbnail {
+    height: 500px;
+  }
+  .subpage-intro {
+    height: 160px;
+  }
+  .step-text {
+    height: 220px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

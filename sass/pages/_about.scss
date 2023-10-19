@@ -1,0 +1,55 @@
+#about {
+    margin-top: 100px;
+    margin-bottom: 400px;
+}
+
+#about-banner {
+    position: fixed;
+    top: 0;
+    height: 57px;
+    background-color: #52b788;
+    width: 100%;
+    z-index: 10;
+}
+
+#profile {
+    height: 175px;
+    width: 175px; 
+    justify-self: center;
+    border-radius: 50%;
+}
+
+#desc1 {
+    margin-top: 15px;
+    height: 80px;
+}
+
+#desc2 {
+    height: 300px;
+}
+
+#section2 {
+    margin-bottom: 200px;
+}
+
+#conclusion {
+    height: 130px;
+}
+
+#conclusion-con {
+    margin-bottom: 100px;
+}
+
+@media screen and (min-width: 600px) {
+    #profile {height: 260px; width: 260px;}
+    #desc1 {margin-top: 20px;}
+    #conclusion {height: 190px;}
+}
+
+@media screen and (min-width: 1200px) {
+    #profile {height: 400px; width: 400px;}
+    #desc1 {height: 110px; align-self: end;}
+    #desc2 {height: 500px; margin-top: 40px;}
+    #conclusion {height: 250px; margin-top: 50px; margin-bottom: 50px;}
+}
+

@@ -25,39 +25,41 @@
  .hidden {
     display: none;
  }
+
+ body {
+  margin: 0;
+ }
+
+ p {
+  padding: none;
+  margin: none;
+ }
  
  .box {
-    /* background-color: rgb(214, 161, 170); */
-    color: rgb(8, 0, 0);
+    background-color: #B7e4c7;
+    color: #2d6a4f;
     border-radius: 5px;
-    padding: 20px;
     text-align: center;
     justify-content: center;
-    margin-top: 5px;
-    margin-bottom:5px;
   }
  
  /* 2. ---Mobile Library Grid Styles--- */
  
  /*---We do not use media queries for mobile or Justin will find us...*/
  
- /*body {
-   background-color: #000;
- }*/
- 
  .full-width-grid-con {
    display: grid;
-   grid-template-columns: 1fr minmax(0, 767px) 1fr;
+   grid-template-columns: 1fr minmax(0, 600px) 1fr;
  }
  
  .grid-con {
    display: grid;
    grid-template-columns: repeat(4, minmax(0, 1fr));
-   grid-column-gap: 20px;
-   max-width: 767px;
+   grid-column-gap: 17px;
+   max-width: 600px;
    margin: 0px auto;
-   padding-left: 15px;
-   padding-right: 15px;
+   padding-left: 14px;
+   padding-right: 14px;
  }
  
  .col-span-auto {
@@ -149,11 +151,7 @@
  
  /* 3. ---Tablet Library Grid Styles--- */
  
- @media screen and (min-width: 730px) {
- 
-   /*body {
-     background: #ff0000;
-   }*/
+ @media screen and (min-width: 600px) {
  
    .full-width-grid-con {
      display: grid;
@@ -162,11 +160,11 @@
    
    .grid-con {
      display: grid;
-     grid-template-columns: repeat(12, minmax(0, 1fr));
-     grid-column-gap: 30px;
+     grid-template-columns: repeat(8, minmax(0, 1fr));
+     grid-column-gap: 16px;
      max-width: 1199px;
-      padding-left: 15px;
-      padding-right: 15px;
+      padding-left: 28px;
+      padding-right: 28px;
      /*--remove below when you fully understand the passing of rules and values(this rule only)--*/
    }
  
@@ -354,9 +352,6 @@
  
  @media screen and (min-width: 1200px) {
  
-     /*body {
-       background: #00ff48;
-     }*/
  
      .full-width-grid-con {
        display: grid;
@@ -366,11 +361,11 @@
      .grid-con {
        display: grid;
        grid-template-columns: repeat(12, minmax(0, 1fr));
-       grid-column-gap: 30px;
+       grid-column-gap: 45px;
        max-width: 1919px;
        margin: 0px auto;
-       padding-left: 17px;
-       padding-right: 17px;
+       padding-left: 52px;
+       padding-right: 52px;
      }
  
      .l-col-span-1 {
@@ -556,10 +551,6 @@
  /* 5. ---X-Large Desktop Library Grid Styles--- */
  
  @media screen and (min-width: 1920px) {
- 
-     /*body {
-       background: #0400e0;
-     }*/
  
      .full-width-grid-con {
        display: grid;
