@@ -1,0 +1,93 @@
+#hero {
+    margin-top: 15px;
+}
+
+#intro {
+    height: 148px;
+}
+
+#container {
+    position: relative;
+}
+
+#photo {
+    height: 200px;
+}
+
+#margin {
+    height: 40px;
+    width: 100%;
+    background-color: rgba($color: #52b788, $alpha: 0.5);
+    position: absolute;
+    bottom: 0px;
+}
+
+#bio {
+    margin-top: 15px;
+}
+
+#brief-desc {
+    height: 100px;
+}
+
+#learn-more {
+    height: 45px;
+    margin-top: 10px;
+}
+
+#demo-reel {
+    margin-top: 15px;
+}
+
+#demo-title {
+    height: 100px;
+}
+
+#video {
+    margin-top: 15px;
+    height: 280px;
+}
+
+#contact-title {
+    margin-top: 20px;
+    height: 40px;
+}
+
+.contact-box {
+    margin-top: 10px;
+    height: 50px;
+}
+
+#message {
+    height: 130px;
+}
+
+
+@media screen and (min-width: 600px) {
+    #intro {height: 188px;}
+    #photo {height: 285px;}
+    #margin {height: 50px;}
+    #brief-desc {height: 125px;}
+    #learn-more {height: 60px; margin-top: 15px;}
+    #video {height: 430px; margin-top: 20px;}
+    #contact-title {height: 70px;}
+    .contact-box {height: 70px; margin-top: 15px;}
+    #message {height: 200px;}
+    #hero {margin-top: 20px;}
+    #bio{margin-top: 20px;}
+    #demo-reel{margin-top: 20px;}
+}
+
+@media screen and (min-width: 1200px) {
+    #intro {height: 300px;}
+    #photo {height: 475px;}
+    #margin {height: 80px;}
+    #brief-desc {height: 180px;}
+    #learn-more {height: 80px;}
+    #demo-title {height: 150px;}
+    #video {height: 1000;}
+    #contact-title {height: 90px;}
+    .contact-box {height: 100px;}
+    #message {height: 350px;}
+}
+

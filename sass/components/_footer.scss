@@ -1,0 +1,35 @@
+#banner2 {
+    margin-top: 15px;
+    height: 150px;
+    background-color: #52b788;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+#address {
+    margin-top: 35px;
+    height: 35px;
+}
+
+#media-icons {
+    margin-top: 20px;
+    height: 50px;
+}
+
+#resume {
+    height: 35px;
+    align-self: end;
+}
+
+@media screen and (min-width: 600px) {
+    #banner2 {height: 185px; margin-top: 20px;}
+    #address {height: 45px;}
+    #media-icons {height: 70px;}
+}
+
+@media screen and (min-width: 1200px) {
+    #banner2 {height: 260px;}
+    #address {height: 80px;}
+    #media-icons {height: 90px; margin-top: 30px;}
+    #resume {height: 50px;}
+}

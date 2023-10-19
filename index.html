@@ -4,12 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Portfolio Homepage</title>
 </head>
 <body>
-    
-    <script src="main.js"></script>
+<div id="smooth-wrapper">
+    <div id="smooth-content">
+        <div id="banner">
+            <header class="grid-con">
+                <h1 class="hidden">Header</h1>
+                <div id="logo" class="box col-start-1 col-end-3 m-col-start-1 m-col-end-3"></div>
+                <div id="hamburger-menu" class="box col-start-4 col-end-5"></div>
+                <nav class="box m-col-start-4 m-col-end-9 l-col-start-5 l-col-end-13"></nav>
+                <div id="mobile-menu" class="box hidden"></div>
+            </header>
+        </div>
+
+        <div id="container">
+        <section id="hero" class="grid-con">
+            <h2 class="hidden">Hero Section</h2>
+            <div id="intro" class="box col-start-1 col-end-3 m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-8"></div>
+            <div id="photo" class="box col-start-3 col-end-5 m-col-start-6 m-col-end-9 l-col-start-8 l-col-end-13"></div>
+        </section>
+        <div id="margin"></div>
+        </div>
+
+        <section id="bio" class="grid-con"> 
+            <h2 class="hidden">Bio</h2>
+            <div id="brief-desc" class="box col-span-full l-col-start-1 l-col-end-9"></div>
+            <div id="learn-more" class="box col-start-2 col-end-4 m-col-start-1 m-col-end-4"></div>
+        </section>
+
+        <section id="demo-reel" class="grid-con">
+            <h2 class="hidden">Demo Reel</h2>
+            <div id="demo-title" class="box col-span-full l-col-start-2 l-col-end-12"></div>
+            <div id="video" class="box col-span-full l-col-start-2 l-col-end-12"></div>
+        </section>
+
+        <section id="contact" class="grid-con">
+            <h2 class="hidden">Contact</h2>
+            <div id="contact-title" class="box col-span-full m-col-start-2 m-col-end-8 l-col-start-4 l-col-end-10"></div>
+            <div class="contact-box box col-span-full l-col-start-2 l-col-end-12"></div>
+            <div class="contact-box box col-span-full l-col-start-2 l-col-end-12"></div>
+            <div id="message" class="contact-box box col-span-full l-col-start-2 l-col-end-12"></div>
+        </section>
+
+        <div id="banner2">
+        <footer class="grid-con">
+            <h2 class="hidden">Footer</h2>
+            <div id="address" class="box col-start-1 col-end-3 m-col-start-1 m-col-end-5"></div>
+            <div id="media-icons" class="box col-start-1 col-end-3 m-col-start-1 m-col-end-5"></div>
+            <div id="resume" class="box col-start-3 col-end-5 m-col-start-6 m-col-end-9 l-col-start-9 l-col-end-13"></div>
+        </footer>
+        </div>
+    </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
