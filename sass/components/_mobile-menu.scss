@@ -1,0 +1,36 @@
+#hamburger-menu {
+    height: 38px;
+    width: 52px;
+    justify-self: end;
+}
+
+#hamburger-menu:hover {
+    height: 38px; 
+    width: 52px;
+    justify-self: end;
+    cursor: pointer;
+}
+
+#mobile-menu {
+    background-color: #1b4332;
+    height: 225px;
+    width: 200px;
+    position: absolute;
+    right: -300px;
+    top: 45px;
+    z-index: 10;
+    border-radius: 0;
+    opacity: 90%;
+    list-style: none;
+    padding-left: 20px;
+}
+
+#mobile-menu li {
+    margin-top: 10px;
+}
+
+#mobile-menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}

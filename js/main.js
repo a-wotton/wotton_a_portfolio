@@ -14,16 +14,24 @@ gsap.registerPlugin(ScrollTrigger);
 // readMore.addEventListener("click", showInfo);
 
 let hamMenu = document.querySelector("#hamburger-menu");
-let mobileMenu = document.querySelector("#mobile-menu")
+let mobileMenu = document.querySelector("#mobile-menu");
+
+const tl = gsap.timeline();
+const toggled = false;
+
 
 function toggleMenu() {
     console.log("clicked on ham menu");
-    mobileMenu.classList.toggle("hidden")
-    mobileMenu.classList.toggle("visible")
-    gsap.from(mobileMenu, {
-            x: 300,
-            duration: 0.5
+    mobileMenu.classList.toggle("toggled")
+    if (mobileMenu.classList.contains("toggled")) {
+    tl.to(mobileMenu, {
+            x: -300,
+            duration: 0.5,
     })
+    tl.restart();
+ } else {
+    tl.reverse();
+ }
 }
 
 hamMenu.addEventListener("click", toggleMenu);
