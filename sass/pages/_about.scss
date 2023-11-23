@@ -21,7 +21,9 @@
 
 #desc1 {
     margin-top: 15px;
-    height: 80px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
 }
 
 #desc2 {
@@ -48,7 +50,11 @@
 
 @media screen and (min-width: 1200px) {
     #profile {height: 400px; width: 400px;}
-    #desc1 {height: 110px; align-self: end;}
+    #desc1 {
+        text-align: left;
+        align-self: end;
+        font-size: 28px;
+    }
     #desc2 {height: 500px; margin-top: 40px;}
     #conclusion {height: 250px; margin-top: 50px; margin-bottom: 50px;}
 }

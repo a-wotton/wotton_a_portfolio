@@ -12,20 +12,32 @@
     <title>About</title>
 </head> 
 <body>
-    <div id="about-banner">
+    <div id="banner">
         <header class="grid-con">
             <h1 class="hidden">Header</h1>
-            <div id="logo" class="box col-start-1 col-end-3 m-col-start-1 m-col-end-3"></div>
-            <div id="hamburger-menu" class="box col-start-4 col-end-5"></div>
-            <nav class="box m-col-start-4 m-col-end-9 l-col-start-5 l-col-end-13"></nav>
-            <div id="mobile-menu" class="box hidden"></div>
+            <img src="images/logo-white.svg" id="logo" class="col-start-1 col-end-3 m-col-start-1 m-col-end-3">
+            <img src="images/hamburger-menu.png" id="hamburger-menu" class="col-start-4 col-end-5">
+            <nav class="m-col-start-3 m-col-end-9 l-col-start-4 l-col-end-13">
+                <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                </ul>
+             </nav>
+             
+            <ul id="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+            </ul>
         </header>
     </div>
 
     <section id="about" class="about grid-con">
         <h2 class="hidden">Intro</h2>
         <div id="profile" class="box col-start-2 col-end-4 m-col-start-3 m-col-end-7 l-col-start-1 l-col-end-5"></div>
-        <div id="desc1" class=" box col-span-full m-col-start-2 m-col-end-8 l-col-start-5 l-col-end-11"></div>
+        <h3 id="desc1" class="col-span-full m-col-start-2 m-col-end-8 l-col-start-5 l-col-end-11">Hello, my name is Aiden, and I am an aspiring front-end developer.</h3>
     </section>
 
     <section id="section2" class="about grid-con">
