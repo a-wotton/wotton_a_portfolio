@@ -77,6 +77,10 @@ header {
   align-items: center;
 }
 
+#logo-con {
+  display: flex;
+}
+
 #logo {
   height: 40px;
 }
@@ -312,49 +316,6 @@ a {
   height: 280px;
 }
 
-#contact-title {
-  margin-top: 20px;
-  height: 40px;
-}
-
-.contact-box {
-  height: 50px;
-  margin-top: 10px;
-  width: 100%;
-  font-size: 14px;
-  padding: 25px;
-  border: solid 1px #2D6A4F;
-  border-radius: 12px;
-  color: #52B788;
-  font-family: "Nunito", sans-serif;
-}
-
-.contact-box::placeholder {
-  color: #52B788;
-  font-family: "Nunito", sans-serif;
-  opacity: 1;
-}
-
-#message {
-  height: 130px;
-}
-
-input:focus {
-  color: #52B788;
-}
-
-input:active {
-  color: #52B788;
-}
-
-#submit {
-  margin-top: 10px;
-  border: none;
-  padding-left: 60px;
-  padding-right: 60px;
-  justify-self: center;
-}
-
 @media screen and (min-width: 600px) {
   #intro {
     font-size: 32px;
@@ -386,21 +347,6 @@ input:active {
   #video {
     height: 430px;
     margin-top: 20px;
-  }
-  .contact-box {
-    height: 70px;
-    margin-top: 15px;
-    border: solid 2px #2D6A4F;
-    border-radius: 18px;
-    font-size: 18px;
-  }
-  #message {
-    height: 200px;
-  }
-  #submit {
-    margin-top: 15px;
-    padding-left: 80px;
-    padding-right: 80px;
   }
   #hero {
     margin-top: 20px;
@@ -453,22 +399,7 @@ input:active {
     text-align: left;
   }
   #video {
-    height: 1000;
-  }
-  .contact-box {
-    height: 100px;
-    border: solid 2px #2D6A4F;
-    border-radius: 24px;
-    font-size: 24px;
-    margin-top: 20px;
-  }
-  #message {
-    height: 350px;
-  }
-  #submit {
-    margin-top: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
+    height: 1000px;
   }
 }
 #about {
@@ -765,6 +696,83 @@ input:active {
   }
   .step-text {
     height: 220px;
+  }
+}
+#contact-title {
+  margin-top: 20px;
+  height: 40px;
+}
+
+.contact-box {
+  height: 50px;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 14px;
+  padding: 25px;
+  border: solid 1px #2D6A4F;
+  border-radius: 12px;
+  color: #52B788;
+  font-family: "Nunito", sans-serif;
+}
+
+.contact-box::placeholder {
+  color: #52B788;
+  font-family: "Nunito", sans-serif;
+  opacity: 1;
+}
+
+#message {
+  height: 130px;
+}
+
+input:focus {
+  color: #52B788;
+}
+
+input:active {
+  color: #52B788;
+}
+
+#submit {
+  margin-top: 10px;
+  border: none;
+  padding-left: 60px;
+  padding-right: 60px;
+  justify-self: center;
+}
+
+@media screen and (min-width: 600px) {
+  .contact-box {
+    height: 70px;
+    margin-top: 15px;
+    border: solid 2px #2D6A4F;
+    border-radius: 18px;
+    font-size: 18px;
+  }
+  #message {
+    height: 200px;
+  }
+  #submit {
+    margin-top: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-box {
+    height: 100px;
+    border: solid 2px #2D6A4F;
+    border-radius: 24px;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  #message {
+    height: 350px;
+  }
+  #submit {
+    margin-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
