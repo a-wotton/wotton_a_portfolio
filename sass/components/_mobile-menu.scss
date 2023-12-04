@@ -1,3 +1,10 @@
+//This will prevent menu from appearing off screen by keeping it hidden.
+@media screen and (max-width: 619px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
 #hamburger-menu {
     height: 38px;
     width: 52px;
