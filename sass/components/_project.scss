@@ -1,9 +1,11 @@
 .expanded-title {
     font-size: 36px;
-    color: #484848;
+    color: #fff;
+    background-color: #2d6a4f;
     text-align: center;
     margin-bottom: 10px;
     margin-top: 10px;
+    border-radius: 30px;
 }
 
 .expanded-cover {
@@ -67,6 +69,36 @@
     width: 80%;
 }
 
+#additional-con {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.skill {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.skill span {
+    color: #52b788;
+    font-weight: 700;
+}
+
+#link-title {
+    font-weight: 700;
+    font-size: 18px;  
+    margin-bottom: 5px;
+}
+
+.additional-link {
+    color: #52b788;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
 @media screen and (min-width: 600px) {
     .expanded-title {
         font-size: 46px;
@@ -85,6 +117,18 @@
 
     .step-details {
         font-size: 18px;
+    }
+    
+    .skill {
+        font-size: 18px;
+    }
+
+    #link-title {
+        font-size: 24px;
+    }
+
+    .additional-link {
+        font-size: 24px;
     }
 }
 
@@ -120,5 +164,21 @@
     .step-details {
         font-size: 24px;
         text-align: left;
+    }
+
+    #conclusion-title {
+        text-align: center;
+    }
+
+    .skill {
+        font-size: 24px;
+    }
+
+    #link-title {
+        font-size: 32px;
+    }
+
+    .additional_link {
+        font-size: 32px;
     }
 }
