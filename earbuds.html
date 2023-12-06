@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Earbuds Details</title>
+</head>
+<body>
+<div id="smooth-wrapper">
+    <div id="smooth-content">
+        <div id="banner">
+            <header class="grid-con">
+                <h1 class="hidden">Header</h1>
+                <a id="logo-con" href="index.html"><img id="logo" src="images/logo-white.svg" class="col-start-1 col-end-3 m-col-start-1 m-col-end-3"></a>
+                <img src="images/hamburger-menu.png" id="hamburger-menu" class="col-start-4 col-end-5">
+                <nav class="m-col-start-3 m-col-end-9 l-col-start-4 l-col-end-13">
+                    <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                 </nav>
+                 
+                <ul id="mobile-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </header>
+        </div>
+
+        <section id="project-intro" class="grid-con">
+            <h2 class="expanded-title col-span-full l-col-start-3 l-col-end-11">Earbuds Site</h2>
+            <img src="images/case-studies/earbuds/earbuds-demo.gif" class="expanded-cover col-span-full l-col-start-2 l-col-end-12" alt="billy beer website">
+            <h3 class="col-span-full l-col-start-1 l-col-end-10">Description:</h3>
+            <p class="col-span-full l-col-start-1 l-col-end-10">For this project, a pair of wireless earbuds must be sketched out and designed in 3D, and then implemented on a responsive page. The page includes a slider that reveals an X-ray version of the earbuds, as well as an animation that progresses as the user scrolls down. Additionally, the earbuds are implemented as an AR object that the user can move around and view specific points of interest that will provide information about the earbuds.</p>
+        </section>
+
+        <section id="steps">
+            <h2 class="case-study col-span-full">Case Study</h2>
+            <div class="step-con grid-con">
+                <h2 class="step-title col-span-full">Research & Planning</h2>
+                <img class="step-img col-span-full" src="images/case-studies/earbuds/earbuds-sketches.png" alt="sketches of earbud ideas">
+                <p class="step-details col-span-full">To begin, I wanted to get a good idea of how wireless earbuds look, and what kind of designs are currently popular. For the base shape of the earbuds, I wanted to take aspects from currently existing earbuds, but I also wanted to make my earbuds look unique. I compiled some of the earbuds that I liked, and began to sketch ideas for my own design.</p>
+            </div>
+
+            <div class="step-con grid-con">
+                <h2 class="step-title col-span-full">Earbud Modelling</h2>
+                <img class="step-img col-span-full" src="images/case-studies/earbuds/no-texture-model.png" alt="base model for earbuds">
+                <p class="step-details col-span-full">Before beginning the page, I went on to create the 3D assets that would be featured on the page. This part required me to take my sketches and bring them to life by reimagining it as a 3D object in a 3D space. Next, I need to texture the 3D models, and come up with the colors of the Earbuds. I also need to create an x-ray version containing each internal piece, all put together in photoshop. I created the earbuds and case all in Cinema 4D, and now they are ready to be included on the webpage.</p>
+            </div>
+
+            <div class="step-con grid-con">
+                <h2 class="step-title col-span-full">Building Assets </h2>
+                <img class="step-img col-span-full" src="images/case-studies/earbuds/model-viewer.png" alt="base model for earbuds">
+                <p class="step-details col-span-full">I lay out the base idea of the page layout, and now it is time to create the assets that will be included. Importing the 3D model data into an online model viewer site will allow me to customize how my model will be viewed on the web, and then automatically generate the code that makes it an interactable AR object. Then, I need to customize and style that code, in order to make it fit the theme of my page, and the colour of my earbuds. I then have to implement Javascript for the X-ray revealer, and render images for each frame of the scrolling animation, and have Greensock animate them on scroll.</p>
+            </div>
+
+            <div class="step-con grid-con">
+                <h2 class="step-title col-span-full">Completing the Site</h2>
+                <img class="step-img col-span-full" src="images/case-studies/earbuds/slider.png" alt="base model for earbuds">
+                <p class="step-details col-span-full">Finally, I complete the page by filling the layout with all my assets, and then ensuring everything follows responsive design.</p>
+            </div>
+        </section>  
+
+        <section id="additional-con" class="grid-con">
+            <h2 id="conclusion-title" class="step-title col-span-full">Skills Improved:</h2>
+            <p class="skill col-span-full"><span>3D Modelling</span> - Modelling the earbuds expanded my knowledge on 3D, by having to realize my sketch in a 3D space, as well as texture it. This work was done in <span>Cinema 4D</span>.</p>
+            <p class="skill col-span-full"><span>3D Animation</span> - I learned more about 3D animation while making the scrolling animation in <span>Cinema 4D</span>.</p>
+            <p class="skill col-span-full"><span>Front End Development</span> - I expanded my front end skills by creating a responsive page, as well as expanding upon the model viewer code, and implementing unique features using Javascript. I improved my skills with <span>HTML, CSS,</span> and <span>Javascript</span>.</p>
+            <p class="skill col-span-full"><span>Wireframing</span> - I improved my wireframing skills by designing the page layout from scratch, all done within <span>Adobe XD</span>.</p>
+            <p id="link-title" class="skill col-span-full">Additional Links:</p>
+            <a class="additional-link col-span-full" href="https://github.com/a-wotton/wotton_a_earbuds.git" target="_blank">Earbuds Site</a>
+        </section>
+
+
+        <div id="banner2">
+        <footer class="grid-con">
+            <h2 class="hidden">Footer</h2>
+            <div id="media-icons" class="media-icons col-start-1 col-end-3 m-col-start-1 m-col-end-5">
+                <a href="#"><img src="images/linkdin.svg" alt="linkedin logo"></a>
+                <a href="#"><img src="images/github.svg" alt="github logo"></a>
+            </div>
+            <div class="media-icons col-start-1 col-end-3 m-col-start-1 m-col-end-5">
+                <a href="#"><img src="images/linkdin-hover.svg" alt="linkedin logo"></a>
+                <a href="#"><img src="images/github-hover.svg" alt="github logo"></a>
+            </div>
+            <a href="#" id="resume" class="col-start-3 col-end-5 m-col-start-6 m-col-end-9 l-col-start-9 l-col-end-13">View my resume</a>
+        </footer>
+        </div>
+    </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
