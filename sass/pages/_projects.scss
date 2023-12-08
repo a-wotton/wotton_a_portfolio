@@ -14,11 +14,10 @@
 .project-title {
     display: flex;
     flex-direction: row;
-    height: 20%;
+    height: 25%;
     width: 100%;
     background-color: #2d6a4f;
-    opacity: 0;
-    //replace with a detailed gsap animation
+    opacity: 90%;
     transition: all 0.5s ease-in;
 }
 
@@ -29,12 +28,6 @@
     align-self: center;
     justify-self: center;
     margin: 0 auto;
-}
-
-#project-name {
-    margin-top: 30px;
-    height: 58px;
-    border-radius: 30px;
 }
 
 #project-image {
@@ -72,14 +65,6 @@
 }
 
 @media screen and (min-width: 600px) {
-    #project-name {
-        height: 80px;
-        margin-left: -28px;
-        border-radius: 0;
-        border-top-right-radius: 40px;
-        border-bottom-right-radius: 40px;
-    }
-
     #project-image {
         height: 350px;
     }
@@ -107,11 +92,8 @@
 }
 
 @media screen and (min-width: 1200px) {
-    #project-name {
-        height: 150px;
-        border-top-right-radius: 80px;
-        border-bottom-right-radius: 80px;
-        margin-left: -52px;
+    .project-title {
+        opacity: 0%;
     }
 
     #project-image {

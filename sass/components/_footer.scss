@@ -15,7 +15,7 @@
 .media-icons img {
     width: 50px;
     margin-right: 10px;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 #media-icons {
@@ -30,32 +30,17 @@
     opacity: 0;
 }
 
-#resume {
-   font-size: 18px;
-   color: #fff;
-   margin-top: 80px;
-   text-decoration: underline;
-   justify-self: end;
-   transition: 0.2s ease;
-}
-
 #resume:hover {
     color: #1b4332;
 } 
 
 @media screen and (min-width: 600px) {
     #banner2 {
-        margin-top: 20px;
-        height: 175px;
+        height: 150px;
     }
 
     .media-icons img {
         width: 60px;
-        margin-top: 100px;
-    }
-
-    #resume {
-        margin-top: 130px;
     }
 }
 
@@ -67,6 +52,4 @@
     .media-icons img {
         width: 70px;
     }
-    
-    #resume {margin-top: 140px;}
 }

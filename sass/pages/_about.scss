@@ -21,23 +21,21 @@
 
 #desc1 {
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     font-weight: 500;
 }
 
-#desc2 {
+.desc2 {
     background-color: #2D6A4F;
     color: #fff;
     border-radius: 30px;
+    padding: 50px;
+    font-size: 18px;
 }
 
 #section2 {
     margin-bottom: 200px;
-}
-
-#conclusion {
-    height: 130px;
 }
 
 #conclusion-con { 
@@ -46,8 +44,8 @@
 
 @media screen and (min-width: 600px) {
     #profile {height: 260px; width: 260px;}
-    #desc1 {margin-top: 20px;}
-    #conclusion {height: 190px;}
+    #desc1 {margin-top: 20px; font-size: 24px;}
+    #desc2 {font-size: 24px;}
 }
 
 @media screen and (min-width: 1200px) {
@@ -57,7 +55,9 @@
         align-self: end;
         font-size: 28px;
     }
-    #desc2 {height: 500px; margin-top: 40px;}
-    #conclusion {height: 250px; margin-top: 50px; margin-bottom: 50px;}
+    .desc2 {
+        margin-top: 40px;
+        font-size: 28px;
+    }
 }
 
