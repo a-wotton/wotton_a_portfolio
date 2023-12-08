@@ -15,7 +15,7 @@
 .media-icons img {
   width: 50px;
   margin-right: 10px;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 #media-icons {
@@ -30,30 +30,16 @@
   opacity: 0;
 }
 
-#resume {
-  font-size: 18px;
-  color: #fff;
-  margin-top: 80px;
-  text-decoration: underline;
-  justify-self: end;
-  transition: 0.2s ease;
-}
-
 #resume:hover {
   color: #1b4332;
 }
 
 @media screen and (min-width: 600px) {
   #banner2 {
-    margin-top: 20px;
-    height: 175px;
+    height: 150px;
   }
   .media-icons img {
     width: 60px;
-    margin-top: 100px;
-  }
-  #resume {
-    margin-top: 130px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -63,10 +49,11 @@
   .media-icons img {
     width: 70px;
   }
-  #resume {
-    margin-top: 140px;
-  }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 #banner {
   height: 57px;
   background-color: #52B788;
@@ -598,23 +585,21 @@ a {
 
 #desc1 {
   margin-top: 15px;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   font-weight: 500;
 }
 
-#desc2 {
+.desc2 {
   background-color: #2D6A4F;
   color: #fff;
   border-radius: 30px;
+  padding: 50px;
+  font-size: 18px;
 }
 
 #section2 {
   margin-bottom: 200px;
-}
-
-#conclusion {
-  height: 130px;
 }
 
 #conclusion-con {
@@ -628,9 +613,10 @@ a {
   }
   #desc1 {
     margin-top: 20px;
+    font-size: 24px;
   }
-  #conclusion {
-    height: 190px;
+  #desc2 {
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -643,14 +629,9 @@ a {
     align-self: end;
     font-size: 28px;
   }
-  #desc2 {
-    height: 500px;
+  .desc2 {
     margin-top: 40px;
-  }
-  #conclusion {
-    height: 250px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    font-size: 28px;
   }
 }
 #gallery-intro {
@@ -669,10 +650,10 @@ a {
 .project-title {
   display: flex;
   flex-direction: row;
-  height: 20%;
+  height: 25%;
   width: 100%;
   background-color: #2d6a4f;
-  opacity: 0;
+  opacity: 90%;
   transition: all 0.5s ease-in;
 }
 
@@ -683,12 +664,6 @@ a {
   align-self: center;
   justify-self: center;
   margin: 0 auto;
-}
-
-#project-name {
-  margin-top: 30px;
-  height: 58px;
-  border-radius: 30px;
 }
 
 #project-image {
@@ -726,13 +701,6 @@ a {
 }
 
 @media screen and (min-width: 600px) {
-  #project-name {
-    height: 80px;
-    margin-left: -28px;
-    border-radius: 0;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-  }
   #project-image {
     height: 350px;
   }
@@ -754,11 +722,8 @@ a {
   }
 }
 @media screen and (min-width: 1200px) {
-  #project-name {
-    height: 150px;
-    border-top-right-radius: 80px;
-    border-bottom-right-radius: 80px;
-    margin-left: -52px;
+  .project-title {
+    opacity: 0%;
   }
   #project-image {
     width: 550px;
