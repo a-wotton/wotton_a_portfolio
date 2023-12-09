@@ -2,17 +2,6 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
-//Read more button toggle
-// let 
-// readMore = document.querySelector("#read-more"),
-// addInfo = document.querySelector("#additional-desc");
-
-// function showInfo() {
-//    addInfo.classList.toggle("hidden"); 
-// }
-
-// readMore.addEventListener("click", showInfo);
-
 let hamMenu = document.querySelector("#hamburger-menu");
 let mobileMenu = document.querySelector("#mobile-menu");
 
@@ -49,6 +38,15 @@ gsap.from(about, {
     }
 })
 })
+
+//Custom Video Player 
+const player = document.querySelector("video")
+const videoControls = document.querySelector("#video-controls")
+
+//remove default controls
+// player.controls = false
+// videoControls.classList.remove("hidden");
+
 
 
 })();   

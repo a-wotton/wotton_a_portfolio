@@ -13,10 +13,10 @@
 }
 
 #profile {
-    height: 175px;
-    width: 175px; 
+    width: 225px; 
     justify-self: center;
     border-radius: 50%;
+    border: solid 10px #52b788;
 }
 
 #desc1 {
@@ -43,13 +43,13 @@
 }
 
 @media screen and (min-width: 600px) {
-    #profile {height: 260px; width: 260px;}
+    #profile {width: 260px;}
     #desc1 {margin-top: 20px; font-size: 24px;}
     #desc2 {font-size: 24px;}
 }
 
 @media screen and (min-width: 1200px) {
-    #profile {height: 400px; width: 400px;}
+    #profile {width: 400px;}
     #desc1 {
         text-align: left;
         align-self: end;

@@ -397,8 +397,87 @@ a {
     font-size: 32px;
   }
 }
+#controls {
+  background: linear-gradient(0deg, rgba(45, 106, 79, 0.3) 35%, rgba(82, 183, 136, 0.3) 100%);
+}
+
+#controls button {
+  background-color: transparent;
+  border: none;
+}
+
+i {
+  font-size: 24px;
+  color: #2d6a4f;
+}
+
+/*********** Baseline, reset styles ***********/
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 8rem;
+}
+
+/* Removes default focus */
+input[type=range]:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type=range]::-webkit-slider-runnable-track {
+  background-color: #2d6a4f;
+  border-radius: 1rem;
+  height: 0.75rem;
+}
+
+/* slider thumb */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -2px; /* Centers thumb on the track */
+  background-color: #52b788;
+  border-radius: 0rem;
+  height: 1rem;
+  width: 0.5rem;
+}
+
+input[type=range]:focus::-webkit-slider-thumb {
+  outline: 3px solid #52b788;
+  outline-offset: 0.125rem;
+}
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type=range]::-moz-range-track {
+  background-color: #2d6a4f;
+  border-radius: 1rem;
+  height: 0.75rem;
+}
+
+/* slider thumb */
+input[type=range]::-moz-range-thumb {
+  background-color: #52b788;
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0rem;
+  height: 1rem;
+  width: 0.5rem;
+}
+
+input[type=range]:focus::-moz-range-thumb {
+  outline: 3px solid #52b788;
+  outline-offset: 0.125rem;
+}
+
 #hero {
   margin-top: 15px;
+}
+
+#hero-con {
+  display: flex;
+  flex-direction: column;
 }
 
 #intro {
@@ -417,21 +496,17 @@ a {
   font-size: 24px;
 }
 
-#container {
-  position: relative;
-}
-
 #photo {
   height: 200px;
-  width: 200px;
 }
 
 #margin {
-  height: 40px;
+  height: 20px;
   width: 100%;
-  background-color: rgba(82, 183, 136, 0.5);
-  position: absolute;
-  bottom: 0px;
+  background-color: #52B788;
+  justify-self: flex-end;
+  margin-top: -20px;
+  opacity: 90%;
 }
 
 #brief-desc {
@@ -472,8 +547,9 @@ a {
 }
 
 #video {
-  margin-top: 15px;
-  height: 280px;
+  width: 90%;
+  justify-self: center;
+  border: solid 5px #52B788;
 }
 
 @media screen and (min-width: 600px) {
@@ -494,7 +570,8 @@ a {
     height: 285px;
   }
   #margin {
-    height: 50px;
+    height: 40px;
+    margin-top: -40px;
   }
   #brief-desc {
     font-size: 18px;
@@ -505,7 +582,6 @@ a {
     padding-bottom: 15px;
   }
   #video {
-    height: 430px;
     margin-top: 20px;
   }
   #hero {
@@ -539,7 +615,8 @@ a {
     height: 475px;
   }
   #margin {
-    height: 80px;
+    height: 70px;
+    margin-top: -70px;
   }
   #brief-desc {
     font-size: 24px;
@@ -558,9 +635,6 @@ a {
   #demo-reel h3, p {
     text-align: left;
   }
-  #video {
-    height: 1000px;
-  }
 }
 #about {
   margin-top: 100px;
@@ -577,10 +651,10 @@ a {
 }
 
 #profile {
-  height: 175px;
-  width: 175px;
+  width: 225px;
   justify-self: center;
   border-radius: 50%;
+  border: solid 10px #52b788;
 }
 
 #desc1 {
@@ -608,7 +682,6 @@ a {
 
 @media screen and (min-width: 600px) {
   #profile {
-    height: 260px;
     width: 260px;
   }
   #desc1 {
@@ -621,7 +694,6 @@ a {
 }
 @media screen and (min-width: 1200px) {
   #profile {
-    height: 400px;
     width: 400px;
   }
   #desc1 {
