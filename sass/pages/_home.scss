@@ -3,6 +3,11 @@
     margin-top: 15px;
 }
 
+#hero-con {
+    display: flex;
+    flex-direction: column;
+}
+
 #intro {
     font-size: 24px;
     margin: 0;
@@ -19,21 +24,17 @@
     font-size: 24px;
 }
 
-#container {
-    position: relative;
-}
-
 #photo {
     height: 200px;
-    width: 200px;
 }
 
 #margin {
-    height: 40px;
+    height: 20px;
     width: 100%;
-    background-color: rgba($color: #52b788, $alpha: 0.5);
-    position: absolute;
-    bottom: 0px;
+    background-color: #52B788;
+    justify-self: flex-end;
+    margin-top: -20px;
+    opacity: 90%;
 }
 
 #brief-desc {
@@ -74,8 +75,9 @@
 }
 
 #video {
-    margin-top: 15px;
-    height: 280px;
+    width: 90%;
+    justify-self: center;
+    border: solid 5px #52B788;
 }
 
 @media screen and (min-width: 600px) {
@@ -96,7 +98,10 @@
     }
     
     #photo {height: 285px;}
-    #margin {height: 50px;}
+    #margin {
+        height: 40px;
+        margin-top: -40px;
+    }
 
     #brief-desc {
         font-size: 18px;
@@ -108,7 +113,7 @@
         padding-bottom: 15px;
     }
 
-    #video {height: 430px; margin-top: 20px;}
+    #video {margin-top: 20px;}
 
     #hero {margin-top: 20px;}
     #bio{margin-top: 20px;}
@@ -136,7 +141,10 @@
         font-size: 60px;
     }
     #photo {height: 475px;}
-    #margin {height: 80px;}
+    #margin {
+        height: 70px;
+        margin-top: -70px;
+    }
 
     #brief-desc {
         font-size: 24px;
@@ -159,8 +167,6 @@
     #demo-reel h3,p {
         text-align: left;
     }
-
-    #video {height: 1000px ;} 
-
 }
+
 
