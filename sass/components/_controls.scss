@@ -1,5 +1,5 @@
 #controls {
-    background: linear-gradient(0deg, rgba(45,106,79,0.3) 35%, rgba(82,183,136,0.3) 100%);
+    background-color: rgba($color: #2d6a4f, $alpha: 0.5);
 }
 
 #controls button {
@@ -9,5 +9,24 @@
 
 i {
     font-size: 24px;
-    color: #2d6a4f;
+    color: #1b4332;
+    margin-left: 5px;
 } 
+
+#vidcon {
+    position: relative;
+    display: flex;
+}
+
+#controls {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    display: flex;
+}
+
+#volume {
+    margin-left: auto;
+    margin-right: 5px;
+}
