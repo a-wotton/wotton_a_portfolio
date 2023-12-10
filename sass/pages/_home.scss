@@ -75,9 +75,9 @@
 }
 
 #video {
-    width: 90%;
+    width: 100%;
     justify-self: center;
-    border: solid 5px #52B788;
+    border: 5px solid #2D6A4F;
 }
 
 @media screen and (min-width: 600px) {
@@ -112,8 +112,6 @@
         padding-top: 15px;
         padding-bottom: 15px;
     }
-
-    #video {margin-top: 20px;}
 
     #hero {margin-top: 20px;}
     #bio{margin-top: 20px;}

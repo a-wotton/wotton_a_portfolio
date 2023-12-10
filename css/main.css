@@ -398,7 +398,7 @@ a {
   }
 }
 #controls {
-  background: linear-gradient(0deg, rgba(45, 106, 79, 0.3) 35%, rgba(82, 183, 136, 0.3) 100%);
+  background-color: rgba(45, 106, 79, 0.5);
 }
 
 #controls button {
@@ -408,7 +408,26 @@ a {
 
 i {
   font-size: 24px;
-  color: #2d6a4f;
+  color: #1b4332;
+  margin-left: 5px;
+}
+
+#vidcon {
+  position: relative;
+  display: flex;
+}
+
+#controls {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 10px;
+  display: flex;
+}
+
+#volume {
+  margin-left: auto;
+  margin-right: 5px;
 }
 
 /*********** Baseline, reset styles ***********/
@@ -428,7 +447,7 @@ input[type=range]:focus {
 /******** Chrome, Safari, Opera and Edge Chromium styles ********/
 /* slider track */
 input[type=range]::-webkit-slider-runnable-track {
-  background-color: #2d6a4f;
+  background-color: #1b4332;
   border-radius: 1rem;
   height: 0.75rem;
 }
@@ -441,7 +460,7 @@ input[type=range]::-webkit-slider-thumb {
   background-color: #52b788;
   border-radius: 0rem;
   height: 1rem;
-  width: 0.5rem;
+  width: 0.4rem;
 }
 
 input[type=range]:focus::-webkit-slider-thumb {
@@ -452,7 +471,7 @@ input[type=range]:focus::-webkit-slider-thumb {
 /*********** Firefox styles ***********/
 /* slider track */
 input[type=range]::-moz-range-track {
-  background-color: #2d6a4f;
+  background-color: #1b4332;
   border-radius: 1rem;
   height: 0.75rem;
 }
@@ -463,7 +482,7 @@ input[type=range]::-moz-range-thumb {
   border: none; /*Removes extra border that FF applies*/
   border-radius: 0rem;
   height: 1rem;
-  width: 0.5rem;
+  width: 0.4rem;
 }
 
 input[type=range]:focus::-moz-range-thumb {
@@ -547,9 +566,9 @@ input[type=range]:focus::-moz-range-thumb {
 }
 
 #video {
-  width: 90%;
+  width: 100%;
   justify-self: center;
-  border: solid 5px #52B788;
+  border: 5px solid #2D6A4F;
 }
 
 @media screen and (min-width: 600px) {
@@ -580,9 +599,6 @@ input[type=range]:focus::-moz-range-thumb {
   .button {
     padding-top: 15px;
     padding-bottom: 15px;
-  }
-  #video {
-    margin-top: 20px;
   }
   #hero {
     margin-top: 20px;
