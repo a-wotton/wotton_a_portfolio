@@ -130,6 +130,9 @@ a {
   body {
     overflow-x: hidden;
   }
+  #mobile-menu {
+    overflow-x: hidden;
+  }
 }
 #hamburger-menu {
   height: 38px;
@@ -586,7 +589,7 @@ input[type=range]:focus::-moz-range-thumb {
     font-size: 32px;
   }
   #photo {
-    height: 285px;
+    height: 240px;
   }
   #margin {
     height: 40px;
