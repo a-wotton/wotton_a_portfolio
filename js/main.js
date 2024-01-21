@@ -14,6 +14,7 @@ function toggleMenu() {
     mobileMenu.classList.toggle("toggled")
     if (mobileMenu.classList.contains("toggled")) {
     tl.to(mobileMenu, {
+            display: "block",
             x: -300,
             duration: 0.5,
     })
