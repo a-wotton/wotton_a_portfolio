@@ -4,6 +4,8 @@
     margin-top: 30px;
     justify-self: center;
     border: solid 10px #2d6a4f;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 420px) {
@@ -29,38 +31,14 @@
 
 @media screen and (min-width: 1200px) {
     .project {
-        width: 560px;
-        height: 280px;
+        width: 520px;
+        height: 260px; 
     }
 }
 
 @media screen and (min-width: 1400px) {
     .project {
-        width: 660px;
-        height: 330px;
+        width: 600px;
+        height: 300px;
     }
-}
-
-#billy-beer-link {
-    background-image: url(../images/billy-beer.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#earbuds-link {
-    background-image: url(../images/earbuds.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#music-mixer-link {
-    background-image: url(../images/music-mixer.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#industry-night-link {
-    background-image: url(../images/industry-night.png);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
