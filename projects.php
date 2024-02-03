@@ -6,7 +6,7 @@
     $stmt->execute();
     ?>
 <head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,27 +47,17 @@
         <?php
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                 echo '<a id="'.$row['id_name'].
-                '"class="project col-span-full l-col-span-6" href="#"><div id="'.$row['title'].
+                '"class="project col-span-full l-col-span-6" href="project_detail.php?id='.$row['id'].
+                '"><div id="'.$row['title'].
                 '"><div class="project-title"><h3>'.$row['title'].
                 '</h3></div></div></a><style> #'.$row['id_name'].
                 ' {background-image: url(images/'.$row['media_name'].
                 ');}</style>';
               }
+
+              $stmt = null;
             ?>
     </section>
- 
-    <!-- <section id="gallery" class="grid-con">
-        <h2 class="subtitle col-span-full">Check out my projects!</h2>
-            <a id="billy-beer-link" class="project col-span-full l-col-span-6" href="billy-beer.html"><div id="billy-beer"><div class="project-title"><h3>Billy Beer Brand Refresh</h3></div></div></a>
-            <style> #billy-beer-link {background-image: url(images/billy-beer.jpg);} </style>
-            <a id="earbuds-link" class="project col-span-full l-col-span-6" href="earbuds.html"><div id="earbuds"><div class="project-title"><h3>Earbuds Site</h3></div></div></a>
-            <style> #earbuds-link {background-image: url(images/earbuds.png);}</style>
-            <a id="music-mixer-link" class="project col-span-full l-col-span-6" href="music-mixer.html"><div id="music-mixer"><div class="project-title"><h3>Music Mixer</h3></div></div></a>
-            <style> #music-mixer-link {background-image: url(images/music-mixer.png);}</style>
-            <a id="industry-night-link" class="project col-span-full l-col-span-6" href="industry-night.html"><div id="industry-night"><div class="project-title"><h3>Industry Night</h3></div></div></a>
-            <style> #industry-night-link {background-image: url(images/industry-night.png);} </style>
-    </section>
-  -->
 
     <div id="banner2">
         <footer class="grid-con">

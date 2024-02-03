@@ -23,6 +23,10 @@
     font-size: 18px;
 }
 
+#project-intro p:first-of-type {
+    margin-bottom: 20px;
+}
+
 .portfolio-link {
     color: #52b788;
     text-decoration: underline;
@@ -99,7 +103,7 @@
     font-weight: 700;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) { 
     .expanded-title {
         font-size: 46px;
     }

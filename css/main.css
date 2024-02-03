@@ -237,6 +237,10 @@ a {
   font-size: 18px;
 }
 
+#project-intro p:first-of-type {
+  margin-bottom: 20px;
+}
+
 .portfolio-link {
   color: #52b788;
   text-decoration: underline;
