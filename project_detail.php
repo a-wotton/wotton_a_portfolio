@@ -9,7 +9,7 @@
     $stmt->execute();
     $stmt = null;
 
-    $query = 'SELECT GROUP_CONCAT(DISTINCT media_name) AS images, GROUP_CONCAT(DISTINCT step_title ORDER BY steps.id) AS stepTitle, GROUP_CONCAT(DISTINCT step_desc ORDER BY steps.id) AS stepDesc, description, title, partners FROM projects, media, steps WHERE projects.id = project_id AND projects.id = :projectId AND project_holder = :projectId';
+    $query = 'SELECT GROUP_CONCAT(DISTINCT media_name ORDER BY media.id) AS images, GROUP_CONCAT(DISTINCT step_title ORDER BY steps.id) AS stepTitle, GROUP_CONCAT(DISTINCT step_desc ORDER BY steps.id) AS stepDesc, description, title, partners FROM projects, media, steps WHERE projects.id = project_id AND projects.id = :projectId AND project_holder = :projectId';
     $stmt = $connection->prepare($query);
     $projectId = $_GET['id'];
     $stmt->bindParam(':projectId', $projectId, PDO::PARAM_INT);
@@ -60,20 +60,27 @@
 
     <?php   
 
+
+
      echo '<section id="project-intro" class="grid-con"><h2 class="expanded-title col-span-full l-col-start-3 l-col-end-11">'.$row['title'].
      '</h2><img class="expanded-cover col-span-full l-col-start-2 l-col-end-12" src="images/'.$images[0].
      '"alt="Project Image"><h3 class= "col-span-full l-col-start-1 l-col-end-10">Description:</h3><p class="col-span-full l-col-start-1 l-col-end-10">'.$row['description'].
      '</p><p class="col-span-full l-col-start-1 l-col-end-10">'.$row['partners'].
      '</p></section><section class="grid-con" id="steps">';
 
+    if (count($images)>2) {
+
+     echo '<h2 class="case-study col-span-full">Case Study</h2>';
+
      for($i =0; $i < count($stepTitle); $i++) {
         echo '<div class="col-span-full"><h2 class="step-title">'.$stepTitle[$i].
         '</h2><img class="step-img" src="images/'.$images[$i+1].
         '"><p class="step-details">'.$stepDesc[$i].
-        '</p></div>';
+        '.</p></div>';
      }
+    }
 
-     echo '</section>';
+    echo '</section>';
 
     ?>  
 
