@@ -2,13 +2,23 @@
 <html lang="en">
     <?php
     require_once('includes/connect.php');
-    $query = 'SELECT GROUP_CONCAT(media_name) AS images, description, title, partners FROM projects, media WHERE projects.id = project_id AND projects.id = :projectId';
+
+    //This increases the max of group concat as it is 1024 by default.
+    $setting = 'SET SESSION group_concat_max_len = 1000000'; 
+    $stmt = $connection->prepare($setting);
+    $stmt->execute();
+    $stmt = null;
+
+    $query = 'SELECT GROUP_CONCAT(DISTINCT media_name) AS images, GROUP_CONCAT(DISTINCT step_title ORDER BY steps.id) AS stepTitle, GROUP_CONCAT(DISTINCT step_desc ORDER BY steps.id) AS stepDesc, description, title, partners FROM projects, media, steps WHERE projects.id = project_id AND projects.id = :projectId AND project_holder = :projectId';
     $stmt = $connection->prepare($query);
     $projectId = $_GET['id'];
     $stmt->bindParam(':projectId', $projectId, PDO::PARAM_INT);
     $stmt->execute();
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
     $images = explode(",", $row['images']);
+    $stepTitle = explode(",", $row['stepTitle']);
+    $stepDesc = explode(".,", $row['stepDesc']);
+    $stmt = null;
     ?>
 <head>
 <meta charset="UTF-8">
@@ -25,6 +35,7 @@
     <title><?php echo $row['title']; ?></title>
 </head>
 <body>
+
 <div id="banner">
             <header class="grid-con">
                 <h1 class="hidden">Header</h1>
@@ -47,12 +58,23 @@
             </header>
         </div>
 
-    <?php 
+    <?php   
+
      echo '<section id="project-intro" class="grid-con"><h2 class="expanded-title col-span-full l-col-start-3 l-col-end-11">'.$row['title'].
      '</h2><img class="expanded-cover col-span-full l-col-start-2 l-col-end-12" src="images/'.$images[0].
      '"alt="Project Image"><h3 class= "col-span-full l-col-start-1 l-col-end-10">Description:</h3><p class="col-span-full l-col-start-1 l-col-end-10">'.$row['description'].
      '</p><p class="col-span-full l-col-start-1 l-col-end-10">'.$row['partners'].
-     '</p></section>';
+     '</p></section><section class="grid-con" id="steps">';
+
+     for($i =0; $i < count($stepTitle); $i++) {
+        echo '<div class="col-span-full"><h2 class="step-title">'.$stepTitle[$i].
+        '</h2><img class="step-img" src="images/'.$images[$i+1].
+        '"><p class="step-details">'.$stepDesc[$i].
+        '</p></div>';
+     }
+
+     echo '</section>';
+
     ?>  
 
 <div id="banner2">
