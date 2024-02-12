@@ -1,0 +1,60 @@
+.option {
+    margin-left: 10px;
+    color: #52B788;
+    text-decoration: underline;
+}
+
+.option:hover {
+    cursor: pointer;
+}
+
+#project_list_con {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#project_list_con h1 {
+    font-size: 24px;
+}
+
+.project_list {
+    font-size: 18px;
+    padding: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.project_list:nth-child(even) {
+    background-color: rgb(226, 226, 226);
+}
+
+#add_project_con {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#add_project_con h2 {
+    font-size: 24px;
+}
+
+#add_project_con form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#add_project_con form input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#add_project_con form input:focus {
+    margin-bottom: 10px;
+    padding: 5px;
+    color: #484848;
+}
+
+
+#add_project_con form input[type="submit"]:hover {
+    cursor: pointer;
+}
