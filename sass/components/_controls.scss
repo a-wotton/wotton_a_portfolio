@@ -1,5 +1,5 @@
 #controls {
-    background-color: rgba($color: #2d6a4f, $alpha: 0.5);
+    background-color: rgba($color: #2d6a4f, $alpha: 0.9);
 }
 
 #controls button {
@@ -9,9 +9,16 @@
 
 i {
     font-size: 24px;
-    color: #1b4332;
+    color: #46a178;
     margin-left: 5px;
+    transition: all 0.5 ease;
+    padding: 5px;
 } 
+
+i:hover {
+    color: #5fd6a5;
+    cursor: pointer;
+}
 
 #vidcon {
     position: relative;
