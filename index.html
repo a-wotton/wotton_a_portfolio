@@ -59,13 +59,13 @@
             <h2 class="hidden">Demo Reel</h2>
             <h3 class="subtitle col-span-full l-col-start-2 l-col-end-12">Interested in animation?</h3>
             <p class="col-span-full l-col-start-2 l-col-end-12">Check out my demo reel.</p>
-            <div id="vidcon" class="col-span-full">
+            <div id="vidcon" class="col-span-full l-col-start-2 l-col-end-12">
                 <video controls poster="images/demo-poster.jpg" id="video" class="col-span-full l-col-start-2 l-col-end-12">
                     <source src="demo-reel.mp4">
                 </video>
                 <div id="controls" class="hidden">
-                    <button id="play-button"><i class="fa-solid fa-play"></i></button>
-                    <button id="pause-button"><i class="fa-solid fa-pause"></i></button>
+                    <button id="play-button"><i id="play-button-icon" class="fa-solid fa-play"></i></button>
+                    <!-- <button id="pause-button"><i class="fa-solid fa-pause"></i></button> -->
                     <button id="stop-button"><i class="fa-solid fa-stop"></i></button>
                     <i id="volume" class="fa-solid fa-volume-high"></i>
                     <input id="change-vol" type="range" step="0.05" min="0" max="1" value="1">
