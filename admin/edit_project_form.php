@@ -24,7 +24,11 @@
 </head>
 <body>
     <form action="edit-project.php" method="POST">
-    
+    <input name="pk" type="hidden" value="<?php echo $row['id']; ?>">
+    <label for="title">Project Title:</label>
+    <input name="title" type="text" value="<?php echo $row['title']; ?>">
+    <label for="desciption">Project Description</label>
+    <input name="desciption" type="text" value="<?php echo $row['description']?>">
     </form>
 </body>
 </html>

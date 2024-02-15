@@ -27,23 +27,34 @@ function toggleMenu() {
 hamMenu.addEventListener("click", toggleMenu);
 
 //Greensock for about page
-let desc1 = document.querySelector("#desc1");
-let desc2 = document.querySelector(".desc2");
+let background = document.querySelector("#cityscape");
+let desc2 = document.querySelector("#section2");
 
-const abouts = document.querySelectorAll(".about");
-abouts.forEach(about => {
-gsap.from(about, {
-    autoAlpha: 0,
+gsap.from(background, {
+    yPercent: 20,
     scrollTrigger: {
-        trigger: about,
+        trigger: background,
+        scrub: true,
+    }
+})
+
+gsap.from(desc2, {
+    autoAlpha: 0,
+    yPercent: -20,
+    scrollTrigger: {
+        trigger: desc2,
         // markers: true,
         scrub: true,
         pin: true,
         start: "center center",
-        end: "+=200"
+        //The idea is that the end becomes the height of the background image, meaning the scrolltrigger ends at the bottom of the image. I then subtracted 50% of that height using some math, so that it ends in the middle, which is more appealing than scrolling all the way to the bottom.
+        end: `+=${background.offsetHeight - background.offsetHeight*0.5}`
     }
 })
-})
+
+
+
+gsap.from()
 
 //Custom Video Player 
 const player = document.querySelector("video");
@@ -73,11 +84,6 @@ function playVideo() {
  }
 }
 
-
-// function pauseVideo() {
-//     player.pause();
-// }
-
 function stopVideo() {
     player.pause();
     player.currentTime = 0;
@@ -100,7 +106,6 @@ function toggleFullScreen() {
 
 
 playButton.addEventListener("click", playVideo);
-// pauseButton.addEventListener("click", pauseVideo);
 stopButton.addEventListener("click", stopVideo);
 volumeSlider.addEventListener("change", changeVolume);
 fullScreen.addEventListener("click", toggleFullScreen);

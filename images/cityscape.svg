@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke: #143827;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #437f62;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #51b688;
+      }
+
+      .cls-4, .cls-3, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        fill: #447f62;
+      }
+    </style>
+  </defs>
+  <g id="sky">
+    <g id="cloud">
+      <ellipse class="cls-4" cx="244" cy="136" rx="72" ry="45"/>
+      <ellipse class="cls-4" cx="144" cy="153" rx="72" ry="45"/>
+      <ellipse class="cls-4" cx="324" cy="144" rx="72" ry="45"/>
+      <ellipse class="cls-4" cx="207.5" cy="117.5" rx="72" ry="45"/>
+    </g>
+    <g id="cloud-2" data-name="cloud">
+      <ellipse class="cls-4" cx="678.14" cy="294.49" rx="78.22" ry="48.89"/>
+      <ellipse class="cls-4" cx="786.78" cy="312.96" rx="78.22" ry="48.89"/>
+      <ellipse class="cls-4" cx="591.22" cy="303.18" rx="78.22" ry="48.89"/>
+      <ellipse class="cls-4" cx="743.77" cy="327.75" rx="93.2" ry="58.25"/>
+    </g>
+    <circle id="sun" class="cls-4" cx="1020" cy="161" r="155.5"/>
+  </g>
+  <g id="tower">
+    <g>
+      <polygon class="cls-5" points="633.23 1200 532.6 1200 555.82 483.95 610.01 483.95 633.23 1200"/>
+      <ellipse class="cls-5" cx="582.91" cy="489.99" rx="59.46" ry="14.11"/>
+      <ellipse class="cls-5" cx="582.91" cy="400.29" rx="77.61" ry="27.21"/>
+      <path class="cls-5" d="m561.68,360.92h42.47c11.09,0,20.09,9,20.09,20.09v16.33h-82.65v-16.33c0-11.09,9-20.09,20.09-20.09Z"/>
+      <path class="cls-5" d="m638.82,484.91c-37.15-4.16-74.66-4.16-111.81,0-12.47,1.38-24.2-7.02-26.28-19.45-2.05-12.96-4.1-25.92-6.16-38.88-.74-4.58,2.93-8.97,8.21-9.72,53.15-7.51,107.1-7.51,160.25,0,5.28.74,8.95,5.14,8.21,9.72-2.05,12.96-4.1,25.92-6.16,38.88-2.08,12.43-13.81,20.83-26.28,19.45Z"/>
+      <path class="cls-5" d="m572.39,340.83h21.04c6.43,0,11.65,5.22,11.65,11.65v20.6h-44.35v-20.6c0-6.43,5.22-11.65,11.65-11.65Z"/>
+      <rect class="cls-5" x="568.8" y="203.76" width="28.22" height="157.23"/>
+      <ellipse class="cls-5" cx="583.04" cy="198.72" rx="34.27" ry="23.18"/>
+      <polygon class="cls-5" points="579.01 .17 587.07 .17 591.1 189.65 574.98 189.65 579.01 .17"/>
+    </g>
+  </g>
+  <g id="buildings">
+    <g>
+      <rect class="cls-2" x="165.56" y="714.53" width="194" height="485.7"/>
+      <polyline class="cls-3" points="359.56 1200.23 414.56 1176.4 414.56 696 359.56 714.53"/>
+      <polyline class="cls-3" points="165.56 714.53 225.46 696 414.56 696 359.56 714.53"/>
+    </g>
+    <g>
+      <rect class="cls-2" x="0" y="466" width="194" height="734"/>
+      <polyline class="cls-1" points="194 1200 249 1164 249 438 194 466"/>
+      <polyline class="cls-1" points="0 466 59.91 438 249 438 194 466"/>
+    </g>
+    <g>
+      <rect class="cls-2" x="828" y="466" width="194" height="734"/>
+      <polyline class="cls-1" points="1022 1200 1077 1164 1077 438 1022 466"/>
+      <polyline class="cls-1" points="828 466 887.91 438 1077 438 1022 466"/>
+    </g>
+  </g>
+</svg>

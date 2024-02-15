@@ -718,8 +718,18 @@ input[type=range]::-moz-range-thumb {
 #desc1 {
   margin-top: 15px;
   font-size: 18px;
-  text-align: center;
+  text-align: left;
   font-weight: 500;
+}
+
+#cityscape-con {
+  position: relative;
+}
+
+#cityscape {
+  position: absolute;
+  top: 0;
+  z-index: -10;
 }
 
 .desc2 {
@@ -731,6 +741,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 #conclusion-con {
+  margin-top: 500px;
   margin-bottom: 100px;
 }
 
@@ -756,7 +767,6 @@ input[type=range]::-moz-range-thumb {
     font-size: 28px;
   }
   .desc2 {
-    margin-top: 40px;
     font-size: 28px;
   }
 }
