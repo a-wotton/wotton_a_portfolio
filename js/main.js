@@ -27,13 +27,15 @@ function toggleMenu() {
 hamMenu.addEventListener("click", toggleMenu);
 
 //Greensock for about page
-let background = document.querySelector("#cityscape");
+let cityscape = document.querySelector("#cityscape");
+let bubbles = document.querySelector("#bubble");
 let desc2 = document.querySelector("#section2");
+let conc = document.querySelector("#conclusion");
 
-gsap.from(background, {
+gsap.from(cityscape, {
     yPercent: 20,
     scrollTrigger: {
-        trigger: background,
+        trigger: cityscape,
         scrub: true,
     }
 })
@@ -47,8 +49,20 @@ gsap.from(desc2, {
         scrub: true,
         pin: true,
         start: "center center",
-        //The idea is that the end becomes the height of the background image, meaning the scrolltrigger ends at the bottom of the image. I then subtracted 50% of that height using some math, so that it ends in the middle, which is more appealing than scrolling all the way to the bottom.
-        end: `+=${background.offsetHeight - background.offsetHeight*0.5}`
+        //The idea is that the end becomes the height of the cityscape image, meaning the scrolltrigger ends at the bottom of the image. I then subtracted 50% of that height using some math, so that it ends in the middle, which is more appealing than scrolling all the way to the bottom.
+        end: `+=${cityscape.offsetHeight - cityscape.offsetHeight*0.5}`
+    }
+})
+
+gsap.from(conc, {
+    autoAlpha: 0,
+    yPercent: -20,
+    scrollTrigger: {
+        trigger: conc,
+        scrub: true,
+        pin: true,
+        start: "center center",
+        end: `+=${bubbles.offsetHeight} + 1000`
     }
 })
 

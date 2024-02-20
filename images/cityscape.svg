@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1350">
   <defs>
     <style>
       .cls-1, .cls-2 {
@@ -68,5 +68,6 @@
       <polyline class="cls-1" points="1022 1200 1077 1164 1077 438 1022 466"/>
       <polyline class="cls-1" points="828 466 887.91 438 1077 438 1022 466"/>
     </g>
+    <rect class="cls-4" y="1170" width="1232" height="180"/>
   </g>
 </svg>

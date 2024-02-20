@@ -35,6 +35,16 @@
     z-index: -10;
 }
 
+#bubble-con {
+    position: relative;
+}
+
+#bubble {
+    position: absolute;
+    top: 0;
+    z-index: -10;
+}
+
 .desc2 {
     background-color: #2D6A4F;
     color: #fff;
@@ -45,7 +55,6 @@
 
 #conclusion-con { 
     margin-top: 500px;
-    margin-bottom: 100px;
 }
 
 @media screen and (min-width: 600px) {

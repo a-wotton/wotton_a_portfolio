@@ -25,8 +25,8 @@
 <?php
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         echo '<p class="project_list">'.$row['title'].
-        '<a class="option" href"edit_project_form.php?id='.$row['id'].
-        '">Edit</a><a class="option" href"delete_project.php?id='.$row['id'].
+        '<a class="option" href="edit_project_form.php?id='.$row['id'].
+        '">Edit</a><a class="option" href="delete_project.php?id='.$row['id'].
         '">Delete</a></p>';
     }
     $stmt = null;
@@ -35,7 +35,7 @@
 
 <section id="add_project_con">
     <h2>Add a Project Here</h2>
-    <form action="add_project.php" method="post">
+    <form class="cms" action="add_project.php" method="post">
         <label for="title">Project Title</label>
         <input name="title" type="text" required>
         <label for="thumbnail">Thumbnail URL</label>
