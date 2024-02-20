@@ -6,7 +6,7 @@
     $query = 'SELECT * FROM projects WHERE projects.id = :projectId';
     $stmt =  $connection->prepare($query);
     $projectId = $_GET['id'];
-    $stmt bindParam(":projectId", $projectId, PDO::PARAM_INT);
+    $stmt->bindParam(":projectId", $projectId, PDO::PARAM_INT);
     $stmt->execute();
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
     ?>
@@ -23,12 +23,15 @@
     <title>Edit Project Page</title>
 </head>
 <body>
-    <form action="edit-project.php" method="POST">
-    <input name="pk" type="hidden" value="<?php echo $row['id']; ?>">
+    <form id="edit_project_form" class="cms" action="edit_project.php" method="POST">
+    <input required name="pk" type="hidden" value="<?php echo $row['id']; ?>">
     <label for="title">Project Title:</label>
-    <input name="title" type="text" value="<?php echo $row['title']; ?>">
-    <label for="desciption">Project Description</label>
-    <input name="desciption" type="text" value="<?php echo $row['description']?>">
+    <input required name="title" type="text" value="<?php echo $row['title']; ?>">
+    <label for="media">Image:</label>
+    <input required name="media" type="text" value="<?php echo $row ['media']; ?>">
+    <label for="description">Project Description:</label>
+    <textarea name="description" type="text"><?php echo $row['description'];?></textarea>
+    <input name="submit" type="submit" value="Edit">
     </form>
 </body>
 </html>
