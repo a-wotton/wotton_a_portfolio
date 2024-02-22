@@ -29,6 +29,10 @@
     <input required name="title" type="text" value="<?php echo $row['title']; ?>">
     <label for="media">Image:</label>
     <input required name="media" type="text" value="<?php echo $row ['media']; ?>">
+    <label for="id_name">ID Name:</label>
+    <input required name="id_name" type="text" value="<?php echo $row ['id_name']; ?>">
+    <label for="partners">Partners:</label>
+    <input name="partners" type="text" value="<?php echo $row ['partners']; ?>">
     <label for="description">Project Description:</label>
     <textarea name="description" type="text"><?php echo $row['description'];?></textarea>
     <input name="submit" type="submit" value="Edit">
