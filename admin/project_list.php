@@ -38,10 +38,12 @@
     <form class="cms" action="add_project.php" method="post">
         <label for="title">Project Title</label>
         <input name="title" type="text" required>
-        <label for="thumbnail">Thumbnail URL</label>
-        <input name="thumbnail" type="text" required>
+        <label for="media">Thumbnail URL</label>
+        <input name="media" type="text" required>
         <label for="description">Project Description</label>
         <input name="description" type="text" required>
+        <label for="id_name">ID Name</label>
+        <input name="id_name" type="text" required>
         <label for="partners">Partners</label>
         <input name="partners" type="text">
         <input name="submit" type="submit" value="Add +">
