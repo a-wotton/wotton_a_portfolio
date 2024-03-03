@@ -2,7 +2,12 @@
 <html lang="en">
 
     <?php
-    require_once("../includes/connect.php");
+    session_start();
+    if(!$_SESSION['username']) {
+        header( 'Location: login_form.php');
+      }
+      
+    require_once("../includes/connect_local.php");
     $stmt =  $connection->prepare('SELECT id, title FROM projects ORDER BY title ASC');
     $stmt->execute();
     ?>
@@ -35,7 +40,7 @@
 
 <section id="add_project_con">
     <h2>Add a Project Here</h2>
-    <form class="cms" action="add_project.php" method="post">
+    <form class="cms" action="add_project.php" method="post" enctype="multipart/form-data">
         <label for="title">Project Title</label>
         <input name="title" type="text" required>
         <label for="media">Thumbnail URL</label>
@@ -46,11 +51,11 @@
         <input name="id_name" type="text" required>
         <label for="partners">Partners</label>
         <input name="partners" type="text">
+        <label for="uploaded">Image File:</label>
+        <input type="file" name="uploaded">
         <input name="submit" type="submit" value="Add +">
     </form>
 </section>
-
-
     
 </body>
 </html>

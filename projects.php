@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <?php
-    require_once('includes/connect.php');
+    require_once('includes/connect_local.php');
     $stmt = $connection->prepare('SELECT * FROM projects,media WHERE projects.media=media.id ORDER BY title ASC');
     $stmt->execute();
     ?>

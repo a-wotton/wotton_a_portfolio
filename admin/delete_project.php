@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-require_once('../includes/connect.php');
+require_once('../includes/connect_local.php');
 $query = 'DELETE FROM projects WHERE projects.id = :projectId';
 $stmt = $connection->prepare($query);
 $projectId = $_GET['id'];
