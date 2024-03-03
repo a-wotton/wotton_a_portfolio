@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <?php
-    require_once('includes/connect.php');
+    require_once('includes/connect_local.php');
 
     //This increases the max of group concat as it is 1024 by default.
     $setting = 'SET SESSION group_concat_max_len = 1000000'; 

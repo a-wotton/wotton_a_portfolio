@@ -1,5 +1,5 @@
 <?php
-    require_once("../includes/connect.php");
+    require_once("../includes/connect_local.php");
     $query = "UPDATE projects SET title = ?,media = ?,description = ?,partners = ?,id_name = ? WHERE id = ?";
     $stmt = $connection->prepare($query);
 
