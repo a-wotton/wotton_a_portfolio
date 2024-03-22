@@ -19,6 +19,8 @@
     background-color: #2d6a4f;
     opacity: 90%;
     transition: all 0.5s ease-in;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
 }
 
 .project-title h3 {
@@ -32,7 +34,7 @@
 
 #project-image {
     margin-top: 20px;
-    height: 270px;
+    height: 270px
 }
 
 #project-desc {
