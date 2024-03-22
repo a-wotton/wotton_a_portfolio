@@ -3,7 +3,7 @@
   background-color: #2d6a4f;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  height: 125px;
+  height: 100px;
 }
 
 .media-icons {
@@ -36,18 +36,18 @@
 
 @media screen and (min-width: 600px) {
   #banner2 {
-    height: 150px;
+    height: 100px;
   }
   .media-icons img {
-    width: 60px;
+    width: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
   #banner2 {
-    height: 200px;
+    height: 100px;
   }
   .media-icons img {
-    width: 70px;
+    width: 50px;
   }
 }
 html {
@@ -149,8 +149,8 @@ a {
 
 #mobile-menu {
   background-color: #1b4332;
-  height: 225px;
-  width: 200px;
+  height: 200px;
+  width: 150px;
   position: absolute;
   right: -300px;
   top: 45px;
@@ -163,13 +163,13 @@ a {
 }
 
 #mobile-menu li {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 #mobile-menu li a {
   color: #fff;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .project {
@@ -177,7 +177,8 @@ a {
   height: 160px;
   margin-top: 30px;
   justify-self: center;
-  border: solid 10px #2d6a4f;
+  border: solid 5px #2d6a4f;
+  border-radius: 1rem;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -846,6 +847,8 @@ input[type=range]::-moz-range-thumb {
   background-color: #2d6a4f;
   opacity: 90%;
   transition: all 0.5s ease-in;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .project-title h3 {
@@ -1035,13 +1038,12 @@ input[type=range]::-moz-range-thumb {
 }
 
 .contact-box {
-  height: 50px;
   margin-top: 10px;
   width: 100%;
-  font-size: 14px;
-  padding: 25px;
+  font-size: 12px;
+  padding: 10px;
   border: solid 1px #2D6A4F;
-  border-radius: 12px;
+  border-radius: 0.5rem;
   color: #52B788;
   font-family: "Nunito", sans-serif;
 }
@@ -1053,7 +1055,9 @@ input[type=range]::-moz-range-thumb {
 }
 
 #message {
-  height: 130px;
+  height: 100px;
+  resize: none;
+  width: 100%;
 }
 
 input:focus {
@@ -1074,14 +1078,12 @@ input:active {
 
 @media screen and (min-width: 600px) {
   .contact-box {
-    height: 70px;
     margin-top: 15px;
-    border: solid 2px #2D6A4F;
-    border-radius: 18px;
-    font-size: 18px;
+    border: solid 1px #2D6A4F;
+    font-size: 12px;
   }
   #message {
-    height: 200px;
+    height: 100px;
   }
   #submit {
     margin-top: 15px;
@@ -1091,14 +1093,13 @@ input:active {
 }
 @media screen and (min-width: 1200px) {
   .contact-box {
-    height: 100px;
+    padding: 20px;
     border: solid 2px #2D6A4F;
-    border-radius: 24px;
-    font-size: 24px;
+    font-size: 18px;
     margin-top: 20px;
   }
   #message {
-    height: 350px;
+    height: 200px;
   }
   #submit {
     margin-top: 20px;

@@ -88,12 +88,12 @@
         <footer class="grid-con">
             <h2 class="hidden">Footer</h2>
             <div id="media-icons" class="media-icons col-start-1 col-end-3 m-col-start-1 m-col-end-5">
-                <a href="#"><img src="images/linkdin.svg" alt="linkedin logo"></a>
-                <a href="#"><img src="images/github.svg" alt="github logo"></a>
+                <a target="_blank" href="https://ca.linkedin.com/in/aiden-wotton-1147582a9"><img src="images/linkdin.svg" alt="linkedin logo"></a>
+                <a target="_blank" href="https://github.com/a-wotton"><img src="images/github.svg" alt="github logo"></a>
             </div>
             <div class="media-icons col-start-1 col-end-3 m-col-start-1 m-col-end-5">
-                <a href="#"><img src="images/linkdin-hover.svg" alt="linkedin logo"></a>
-                <a href="#"><img src="images/github-hover.svg" alt="github logo"></a>
+                <a target="_blank" href="https://ca.linkedin.com/in/aiden-wotton-1147582a9"><img src="images/linkdin-hover.svg" alt="linkedin logo"></a>
+                <a target="_blank" href="https://github.com/a-wotton"><img src="images/github-hover.svg" alt="github logo"></a>
             </div>
         </footer>
     </div>
